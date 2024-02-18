@@ -45,6 +45,6 @@ mongoose.connect(MONGO_URL)
     app.listen(PORT, ()=> {
         console.log('Node API app is running on port ${PORT} ')
     });   
-}).catch(() =>{
+}).catch((error) =>{
     console.log(error)
 })
